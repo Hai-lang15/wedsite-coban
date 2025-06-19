@@ -1,0 +1,158 @@
+/*Phần header*/
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #335C3C;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+}
+
+nav a{
+    padding: 8px 16px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:hover{
+    color: #0DDB39;
+}
+
+.banner img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*main*/
+
+.container{
+    width: 90%;;
+    margin: 0 auto;
+}
+
+.tittle{
+    color: #309C47;
+    text-align: center;
+}
+.productlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;/*khi hàng đủ kích thước 100% các box sẽ tự động xuống dòng*/
+    gap: 20px; /*Khoảng cách giữa các sản phẩm*//*gap tự trừ khoảng cách không cần trừ trong width*/
+}
+
+.product-item{
+    width: 23%;
+    /* float: left;  Loại bỏ float để flexbox hoạt động đúng */
+    border: 1px solid wheat;
+    box-shadow: 0 0 10px 5px rgb(205, 202, 202);
+    color: #309C47;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.product-item span .gh{
+    text-align: center;
+    border: 1px solid #309C47;
+    background-color: #309C47;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 15px;
+    
+}
+
+.product-item span .gh:hover{
+    background-color: aliceblue;
+    color: #309C47;
+    cursor: pointer;
+}
+
+.product-item .img{
+    background-color: rgb(225, 223, 220);
+    border-radius: 10px 10px 0 0;
+}
+
+.product-item img{
+    width: 100%;
+
+}
+
+.map iframe{
+    width: 100%;
+    height: 700px;
+
+}
+
+.video iframe{
+    display: block;
+    margin: auto;
+    width: 500px;
+    
+}
+
+
+
+.product-itemkm{
+    width: calc(25% - 40px);
+    display: inline-block;
+    justify-content: center;
+    border: 1px solid wheat;
+    box-shadow: 0 0 10px 5px rgb(205, 202, 202);
+    color: gray;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: 15px;
+    text-align: right;
+    
+}
+
+.product-itemkm img{
+    width: 100%; 
+}
+.fa-eye{
+    text-align: right;
+}
+
+/*footer*/
+footer{
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: #335C3C;
+    }
+
+.col-4{
+    width: calc(32% - 30px);
+    display: inline-block;
+    margin: 15px;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+.col-4 img{
+    width: 80%;
+    margin: auto;
+    height: 200px;  
+    border-radius: 5px ;
+    padding-bottom: 20px;
+    
+}
+
+.col-4 .icon i{
+    border: 1px solid whitesmoke;
+    padding: 7px;
+    border-radius: 10px;
+
+}
+
